@@ -31,16 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.label_pontoHoras = new System.Windows.Forms.Label();
-            this.label_hora = new System.Windows.Forms.Label();
-            this.label_min = new System.Windows.Forms.Label();
-            this.timerSeg = new System.Windows.Forms.Timer(this.components);
-            this.rb_texto = new System.Windows.Forms.RichTextBox();
-            this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.Strip_ficheiro = new System.Windows.Forms.ToolStripSplitButton();
             this.bot_novo = new System.Windows.Forms.ToolStripMenuItem();
             this.bot_abrir = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,6 +63,16 @@
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.label_pontoHoras = new System.Windows.Forms.Label();
+            this.label_hora = new System.Windows.Forms.Label();
+            this.label_min = new System.Windows.Forms.Label();
+            this.timerSeg = new System.Windows.Forms.Timer(this.components);
+            this.rb_texto = new System.Windows.Forms.RichTextBox();
+            this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,58 +101,6 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // label_pontoHoras
-            // 
-            this.label_pontoHoras.AutoSize = true;
-            this.label_pontoHoras.BackColor = System.Drawing.Color.Snow;
-            this.label_pontoHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_pontoHoras.Location = new System.Drawing.Point(718, 3);
-            this.label_pontoHoras.Name = "label_pontoHoras";
-            this.label_pontoHoras.Size = new System.Drawing.Size(25, 24);
-            this.label_pontoHoras.TabIndex = 9;
-            this.label_pontoHoras.Text = "︰";
-            // 
-            // label_hora
-            // 
-            this.label_hora.AutoSize = true;
-            this.label_hora.BackColor = System.Drawing.Color.Snow;
-            this.label_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora.Location = new System.Drawing.Point(689, 9);
-            this.label_hora.Name = "label_hora";
-            this.label_hora.Size = new System.Drawing.Size(23, 16);
-            this.label_hora.TabIndex = 8;
-            this.label_hora.Text = "00";
-            this.label_hora.Click += new System.EventHandler(this.label_hora_Click);
-            // 
-            // label_min
-            // 
-            this.label_min.AutoSize = true;
-            this.label_min.BackColor = System.Drawing.Color.Snow;
-            this.label_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_min.Location = new System.Drawing.Point(749, 9);
-            this.label_min.Name = "label_min";
-            this.label_min.Size = new System.Drawing.Size(23, 16);
-            this.label_min.TabIndex = 7;
-            this.label_min.Text = "00";
-            // 
-            // timerSeg
-            // 
-            this.timerSeg.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // rb_texto
-            // 
-            this.rb_texto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rb_texto.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_texto.Location = new System.Drawing.Point(0, 37);
-            this.rb_texto.Name = "rb_texto";
-            this.rb_texto.Size = new System.Drawing.Size(784, 423);
-            this.rb_texto.TabIndex = 10;
-            this.rb_texto.Text = "";
-            // 
-            // OpenFileDialog1
-            // 
-            this.OpenFileDialog1.FileName = "OpenFileDialog1";
-            // 
             // Strip_ficheiro
             // 
             this.Strip_ficheiro.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -175,7 +123,7 @@
             // 
             this.bot_novo.Image = global::MyNotePad.Properties.Resources.icons8_arquivo_30__1_;
             this.bot_novo.Name = "bot_novo";
-            this.bot_novo.Size = new System.Drawing.Size(130, 36);
+            this.bot_novo.Size = new System.Drawing.Size(116, 22);
             this.bot_novo.Text = "Novo";
             this.bot_novo.Click += new System.EventHandler(this.bot_novo_Click);
             // 
@@ -183,7 +131,7 @@
             // 
             this.bot_abrir.Image = global::MyNotePad.Properties.Resources.icons8_open_folder_30;
             this.bot_abrir.Name = "bot_abrir";
-            this.bot_abrir.Size = new System.Drawing.Size(130, 36);
+            this.bot_abrir.Size = new System.Drawing.Size(116, 22);
             this.bot_abrir.Text = "Abrir";
             this.bot_abrir.Click += new System.EventHandler(this.bot_abrir_Click);
             // 
@@ -191,7 +139,7 @@
             // 
             this.bot_guardar.Image = global::MyNotePad.Properties.Resources.icons8_salvar_30;
             this.bot_guardar.Name = "bot_guardar";
-            this.bot_guardar.Size = new System.Drawing.Size(130, 36);
+            this.bot_guardar.Size = new System.Drawing.Size(116, 22);
             this.bot_guardar.Text = "Guardar";
             this.bot_guardar.Click += new System.EventHandler(this.bot_guardar_Click);
             // 
@@ -199,7 +147,7 @@
             // 
             this.bot_sair.Image = global::MyNotePad.Properties.Resources.icons8_sair_30;
             this.bot_sair.Name = "bot_sair";
-            this.bot_sair.Size = new System.Drawing.Size(130, 36);
+            this.bot_sair.Size = new System.Drawing.Size(116, 22);
             this.bot_sair.Text = "Sair";
             this.bot_sair.Click += new System.EventHandler(this.bot_sair_Click);
             // 
@@ -225,7 +173,7 @@
             // 
             this.bot_cortar.Image = global::MyNotePad.Properties.Resources.icons8_tesoura_32;
             this.bot_cortar.Name = "bot_cortar";
-            this.bot_cortar.Size = new System.Drawing.Size(172, 36);
+            this.bot_cortar.Size = new System.Drawing.Size(158, 22);
             this.bot_cortar.Text = "Cortar";
             this.bot_cortar.Click += new System.EventHandler(this.bot_cortar_Click);
             // 
@@ -233,7 +181,7 @@
             // 
             this.bot_copiar.Image = global::MyNotePad.Properties.Resources.icons8_copiar_32;
             this.bot_copiar.Name = "bot_copiar";
-            this.bot_copiar.Size = new System.Drawing.Size(172, 36);
+            this.bot_copiar.Size = new System.Drawing.Size(158, 22);
             this.bot_copiar.Text = "Copiar";
             this.bot_copiar.Click += new System.EventHandler(this.bot_copiar_Click);
             // 
@@ -241,20 +189,20 @@
             // 
             this.bot_colar.Image = global::MyNotePad.Properties.Resources.icons8_colar_32;
             this.bot_colar.Name = "bot_colar";
-            this.bot_colar.Size = new System.Drawing.Size(172, 36);
+            this.bot_colar.Size = new System.Drawing.Size(158, 22);
             this.bot_colar.Text = "Colar";
             this.bot_colar.Click += new System.EventHandler(this.bot_colar_Click);
             // 
             // bot_separador
             // 
             this.bot_separador.Name = "bot_separador";
-            this.bot_separador.Size = new System.Drawing.Size(169, 6);
+            this.bot_separador.Size = new System.Drawing.Size(155, 6);
             // 
             // bot_selecionar
             // 
             this.bot_selecionar.Image = global::MyNotePad.Properties.Resources.icons8_cursor_32;
             this.bot_selecionar.Name = "bot_selecionar";
-            this.bot_selecionar.Size = new System.Drawing.Size(172, 36);
+            this.bot_selecionar.Size = new System.Drawing.Size(158, 22);
             this.bot_selecionar.Text = "Selecionar Tudo";
             this.bot_selecionar.Click += new System.EventHandler(this.bot_selecionar_Click);
             // 
@@ -262,7 +210,7 @@
             // 
             this.bot_procurar.Image = global::MyNotePad.Properties.Resources.icons8_pesquisar_32;
             this.bot_procurar.Name = "bot_procurar";
-            this.bot_procurar.Size = new System.Drawing.Size(172, 36);
+            this.bot_procurar.Size = new System.Drawing.Size(158, 22);
             this.bot_procurar.Text = "Procurar";
             this.bot_procurar.Click += new System.EventHandler(this.bot_procurar_Click);
             // 
@@ -284,7 +232,7 @@
             // 
             this.bot_letra.Image = global::MyNotePad.Properties.Resources.icons8_maiúscula_inicial_32;
             this.bot_letra.Name = "bot_letra";
-            this.bot_letra.Size = new System.Drawing.Size(157, 36);
+            this.bot_letra.Size = new System.Drawing.Size(143, 22);
             this.bot_letra.Text = "Letra";
             this.bot_letra.Click += new System.EventHandler(this.bot_letra_Click);
             // 
@@ -295,14 +243,14 @@
             this.bot_fundo});
             this.bot_cor.Image = global::MyNotePad.Properties.Resources.icons8_modo_de_cor_32;
             this.bot_cor.Name = "bot_cor";
-            this.bot_cor.Size = new System.Drawing.Size(157, 36);
+            this.bot_cor.Size = new System.Drawing.Size(143, 22);
             this.bot_cor.Text = "Cor";
             // 
             // bot_CorLetra
             // 
             this.bot_CorLetra.Image = global::MyNotePad.Properties.Resources.icons8_maiúscula_inicial_32__3_;
             this.bot_CorLetra.Name = "bot_CorLetra";
-            this.bot_CorLetra.Size = new System.Drawing.Size(122, 36);
+            this.bot_CorLetra.Size = new System.Drawing.Size(108, 22);
             this.bot_CorLetra.Text = "Letra";
             this.bot_CorLetra.Click += new System.EventHandler(this.bot_CorLetra_Click);
             // 
@@ -310,7 +258,7 @@
             // 
             this.bot_fundo.Image = global::MyNotePad.Properties.Resources.icons8_cor_de_preenchimento_32;
             this.bot_fundo.Name = "bot_fundo";
-            this.bot_fundo.Size = new System.Drawing.Size(122, 36);
+            this.bot_fundo.Size = new System.Drawing.Size(108, 22);
             this.bot_fundo.Text = "Fundo";
             this.bot_fundo.Click += new System.EventHandler(this.bot_fundo_Click);
             // 
@@ -322,14 +270,14 @@
             this.bot_ALdireita});
             this.bot_alinhamento.Image = global::MyNotePad.Properties.Resources.icons8_alinhar_à_esquerda_32;
             this.bot_alinhamento.Name = "bot_alinhamento";
-            this.bot_alinhamento.Size = new System.Drawing.Size(157, 36);
+            this.bot_alinhamento.Size = new System.Drawing.Size(143, 22);
             this.bot_alinhamento.Text = "Alinhamento";
             // 
             // bot_ALesquerda
             // 
             this.bot_ALesquerda.Image = global::MyNotePad.Properties.Resources.icons8_alinhar_à_esquerda_32__1_;
             this.bot_ALesquerda.Name = "bot_ALesquerda";
-            this.bot_ALesquerda.Size = new System.Drawing.Size(136, 36);
+            this.bot_ALesquerda.Size = new System.Drawing.Size(122, 22);
             this.bot_ALesquerda.Text = "Esquerda";
             this.bot_ALesquerda.Click += new System.EventHandler(this.bot_ALesquerda_Click);
             // 
@@ -337,7 +285,7 @@
             // 
             this.bot_ALcentro.Image = global::MyNotePad.Properties.Resources.icons8_alinhar_ao_centro_32;
             this.bot_ALcentro.Name = "bot_ALcentro";
-            this.bot_ALcentro.Size = new System.Drawing.Size(136, 36);
+            this.bot_ALcentro.Size = new System.Drawing.Size(122, 22);
             this.bot_ALcentro.Text = "Centro";
             this.bot_ALcentro.Click += new System.EventHandler(this.bot_ALcentro_Click);
             // 
@@ -345,7 +293,7 @@
             // 
             this.bot_ALdireita.Image = global::MyNotePad.Properties.Resources.icons8_alinhar_à_direita_32;
             this.bot_ALdireita.Name = "bot_ALdireita";
-            this.bot_ALdireita.Size = new System.Drawing.Size(136, 36);
+            this.bot_ALdireita.Size = new System.Drawing.Size(122, 22);
             this.bot_ALdireita.Text = "Direita";
             this.bot_ALdireita.Click += new System.EventHandler(this.bot_ALdireita_Click);
             // 
@@ -441,6 +389,7 @@
             // 
             // toolStripButton1
             // 
+            this.toolStripButton1.AutoSize = false;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = global::MyNotePad.Properties.Resources.icons8_usuário_masculino;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -448,6 +397,58 @@
             this.toolStripButton1.Size = new System.Drawing.Size(34, 34);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // label_pontoHoras
+            // 
+            this.label_pontoHoras.AutoSize = true;
+            this.label_pontoHoras.BackColor = System.Drawing.Color.Snow;
+            this.label_pontoHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_pontoHoras.Location = new System.Drawing.Point(718, 3);
+            this.label_pontoHoras.Name = "label_pontoHoras";
+            this.label_pontoHoras.Size = new System.Drawing.Size(25, 24);
+            this.label_pontoHoras.TabIndex = 9;
+            this.label_pontoHoras.Text = "︰";
+            // 
+            // label_hora
+            // 
+            this.label_hora.AutoSize = true;
+            this.label_hora.BackColor = System.Drawing.Color.Snow;
+            this.label_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora.Location = new System.Drawing.Point(689, 9);
+            this.label_hora.Name = "label_hora";
+            this.label_hora.Size = new System.Drawing.Size(23, 16);
+            this.label_hora.TabIndex = 8;
+            this.label_hora.Text = "00";
+            this.label_hora.Click += new System.EventHandler(this.label_hora_Click);
+            // 
+            // label_min
+            // 
+            this.label_min.AutoSize = true;
+            this.label_min.BackColor = System.Drawing.Color.Snow;
+            this.label_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_min.Location = new System.Drawing.Point(749, 9);
+            this.label_min.Name = "label_min";
+            this.label_min.Size = new System.Drawing.Size(23, 16);
+            this.label_min.TabIndex = 7;
+            this.label_min.Text = "00";
+            // 
+            // timerSeg
+            // 
+            this.timerSeg.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // rb_texto
+            // 
+            this.rb_texto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rb_texto.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_texto.Location = new System.Drawing.Point(0, 37);
+            this.rb_texto.Name = "rb_texto";
+            this.rb_texto.Size = new System.Drawing.Size(784, 423);
+            this.rb_texto.TabIndex = 10;
+            this.rb_texto.Text = "";
+            // 
+            // OpenFileDialog1
+            // 
+            this.OpenFileDialog1.FileName = "OpenFileDialog1";
             // 
             // Form1
             // 
@@ -462,7 +463,9 @@
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NotePad";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);

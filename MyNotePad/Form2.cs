@@ -20,7 +20,12 @@ namespace MyNotePad
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.URL = @"C:\Users\51513\Desktop\creditos.mp4";
-            axWindowsMediaPlayer1.Ctlcontrols.play(); 
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
